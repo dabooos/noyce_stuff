@@ -8,7 +8,9 @@ Install: Adafruit NeoPixel library
 
 Sketch-> Include Library:
 	 Adafruit NeoPixel library
+	 
 	 Adafruit NeoMatrix library
+	 
 	 Adafruit GFX library
 
 -----------------------------------------------------
