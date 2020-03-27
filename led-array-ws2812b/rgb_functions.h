@@ -1,4 +1,4 @@
-//wrapper contruct *see defines.h line 6*
+//wrapper contruct *see defines.h line 1*
 #ifndef RGB_FUNCTIONS_H
 #define RGB_FUNCTIONS_H
 
