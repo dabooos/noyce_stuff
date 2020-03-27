@@ -65,9 +65,9 @@
 // Note that for older NeoPixel strips you might need to change the third parameter--see the strandtest
 // example for more information on possible values.
 Adafruit_NeoMatrix* matrix = new Adafruit_NeoMatrix(mw, mh, PIN,
-  NEO_MATRIX_TOP     + NEO_MATRIX_LEFT +
-    NEO_MATRIX_ROWS + NEO_MATRIX_ZIGZAG,
-    NEO_GRB           + NEO_KHZ800);
+                                                    NEO_MATRIX_TOP  + NEO_MATRIX_LEFT +
+                                                    NEO_MATRIX_ROWS + NEO_MATRIX_ZIGZAG,
+                                                    NEO_GRB         + NEO_KHZ800);
   
 //Globals
 int counter = 0;
