@@ -1,8 +1,8 @@
-#include "defines.h"
-
 //wrapper contruct *see defines.h line 6*
 #ifndef RGB_FUNCTIONS_H
 #define RGB_FUNCTIONS_H
+
+#include "defines.h"
 
 // Convert an ABGR 8/8/8/8 bitmap to RGB 5/6/5 used by Adafruit_GFX
 void fixdrawRGBBitmap(int16_t x, int16_t y, const uint32_t *bitmap, int16_t w, int16_t h) {
@@ -16,8 +16,7 @@ void fixdrawRGBBitmap(int16_t x, int16_t y, const uint32_t *bitmap, int16_t w, i
     uint8_t b5 = ((a8b8g8r8 >> 16) & 0xFF) >> (8 - 5);
     RGB_bmp_fixed[pixel] = (r5 << 11) | (g6 << 5) | b5;
   }
-  matrix->drawRGBBitmap(x, y, RGB_bmp_fixed, w, h);
-  
+  matrix->drawRGBBitmap(x, y, RGB_bmp_fixed, w, h);  
 }
 
 // Display bitmap
@@ -30,8 +29,7 @@ void display_rgbBitmap(uint8_t bmp_num) {
   if (bmx >= mw) bmx = 0;
   if (!bmx) bmy += 12;
   if (bmy >= mh) bmy = 0;
-  matrix->show();
-  
+  matrix->show(); 
 }
 
 //End of wrapper contruct
